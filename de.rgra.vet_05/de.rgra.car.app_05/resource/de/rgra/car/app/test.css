@@ -1,0 +1,12 @@
+
+.toolbar {
+     -fx-background-color: #CD0000;
+ }
+ 
+.statusline {
+     -fx-background-color: #CD0000;
+ }
+ 
+.statusline > .label {
+     -fx-text-fill: white;
+}

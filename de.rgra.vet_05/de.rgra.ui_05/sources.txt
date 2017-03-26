@@ -1,0 +1,12 @@
+D:\workspaces\java9\de.rgra.vet_05\de.rgra.ui_05\src\module-info.java
+D:\workspaces\java9\de.rgra.vet_05\de.rgra.ui_05\src\de\rgra\vet\customer\nl\Messages.java
+D:\workspaces\java9\de.rgra.vet_05\de.rgra.ui_05\src\de\rgra\vet\customer\spi\CustomerViewTabService.java
+D:\workspaces\java9\de.rgra.vet_05\de.rgra.ui_05\src\de\rgra\vet\customer\ui\CustomerInfoPane.java
+D:\workspaces\java9\de.rgra.vet_05\de.rgra.ui_05\src\de\rgra\vet\customer\ui\CustomerNavigationNode.java
+D:\workspaces\java9\de.rgra.vet_05\de.rgra.ui_05\src\de\rgra\vet\customer\ui\CustomerTable.java
+D:\workspaces\java9\de.rgra.vet_05\de.rgra.ui_05\src\de\rgra\vet\customer\ui\CustomerView.java
+D:\workspaces\java9\de.rgra.vet_05\de.rgra.ui_05\src\de\rgra\vet\invoice\nl\Messages.java
+D:\workspaces\java9\de.rgra.vet_05\de.rgra.ui_05\src\de\rgra\vet\invoice\ui\InvoiceTable.java
+D:\workspaces\java9\de.rgra.vet_05\de.rgra.ui_05\src\de\rgra\vet\ui\NavigationNode.java
+D:\workspaces\java9\de.rgra.vet_05\de.rgra.ui_05\src\de\rgra\vet\visit\nl\Messages.java
+D:\workspaces\java9\de.rgra.vet_05\de.rgra.ui_05\src\de\rgra\vet\visit\ui\VisitTable.java
