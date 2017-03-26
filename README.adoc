@@ -1,2 +1,4 @@
 # java9-module-refactoring
 Code for Talk: Refactoring your code to Java 9 modules
+
+Slides and Abstract on my website: http://rgra.github.io
