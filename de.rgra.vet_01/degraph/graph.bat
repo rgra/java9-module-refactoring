@@ -1,1 +1,1 @@
-degraph -f vet1.config
+%DEGRAPH_HOME%/bin/degraph.bat -f vet1_2.config

@@ -30,14 +30,8 @@ public class CustomerView extends BorderPane {
 		return tabPane;
 	}
 
-	private Node createInvoiceNode() {
-		List<Invoice> invoices = new InvoiceDao().fetchInvoicesForCustomer(customer.getId());
-		InvoiceTable table = new InvoiceTable(invoices);
-		return table;
-	}
-
 	private Node createPetNode() {
-		// TODO service einführen
+		// TODO service einfuehren
 		// List<Pet> pets = new PetDao().fetchPetsForCustomer(customer.getId());
 		// PetTable table = new PetTable(pets, false) {
 		// @Override
@@ -47,6 +41,12 @@ public class CustomerView extends BorderPane {
 		// };
 		// return table;
 		return new HBox();
+	}
+	
+	private Node createInvoiceNode() {
+		List<Invoice> invoices = new InvoiceDao().fetchInvoicesForCustomer(customer.getId());
+		InvoiceTable table = new InvoiceTable(invoices);
+		return table;
 	}
 	
 	public void replace(BorderPane newView) {

@@ -59,6 +59,8 @@ public class CustomerDao {
 			customer.setCity("Bremen"); //$NON-NLS-1$
 			result.add(customer);
 		}
+		
+		result.forEach(System.out::println);
 
 		return Collections.unmodifiableList(result);
 	}

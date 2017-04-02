@@ -5,4 +5,5 @@ module de.rgra.app_05 {
 	exports de.rgra.app;
 	
 	uses de.rgra.app.spi.ApplicationConfigurationProvider;
+	
 }

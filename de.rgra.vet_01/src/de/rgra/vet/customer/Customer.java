@@ -1,5 +1,8 @@
 package de.rgra.vet.customer;
 
+import org.apache.commons.lang.builder.ToStringBuilder;
+import org.apache.commons.lang.builder.ToStringStyle;
+
 import javafx.beans.property.IntegerProperty;
 import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleStringProperty;
@@ -17,6 +20,11 @@ public class Customer {
 
 	private StringProperty cityProperty = new SimpleStringProperty(this, "city");
 
+	@Override
+	public String toString() {
+		return ToStringBuilder.reflectionToString(this, ToStringStyle.SHORT_PREFIX_STYLE);
+	}
+	
 	public IntegerProperty getIdProperty() {
 		return idProperty;
 	}
@@ -76,5 +84,7 @@ public class Customer {
 	public void setCity(String value) {
 		cityProperty.set(value);
 	}
+
+
 
 }

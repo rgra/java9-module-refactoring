@@ -1,5 +1,6 @@
 module de.rgra.model_04 {
 	requires javafx.base;
+	requires commons.lang;
 	
 	exports de.rgra.vet.customer.model;   
     exports de.rgra.vet.customer.db;    
@@ -8,4 +9,6 @@ module de.rgra.model_04 {
     exports de.rgra.vet.visit.db;  
     exports de.rgra.vet.visit.model;  
     exports de.rgra.vet.db;
+    
+    opens de.rgra.vet.customer.model;
 }

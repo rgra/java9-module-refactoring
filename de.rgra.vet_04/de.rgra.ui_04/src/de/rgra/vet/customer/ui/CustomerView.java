@@ -28,10 +28,11 @@ public class CustomerView extends BorderPane {
 		TabPane tabPane = new TabPane();
 
 		ServiceLoader.load(CustomerViewTabService.class).stream()
-				.flatMap(tabProvider -> tabProvider.get().createTabs(this, customer).stream())
+				.flatMap(proxy -> proxy.get().createTabs(this, customer).stream())
 				.forEach(tabPane.getTabs()::add);
 
-		tabPane.getTabs().add(createTab(Messages.getString("CustomerView.invoices"), createInvoiceNode())); //$NON-NLS-1$
+		tabPane.getTabs()
+			.add(createTab(Messages.getString("CustomerView.invoices"), createInvoiceNode()));
 		return tabPane;
 	}
 

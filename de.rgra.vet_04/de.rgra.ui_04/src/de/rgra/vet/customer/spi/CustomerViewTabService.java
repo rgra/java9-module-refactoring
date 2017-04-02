@@ -7,6 +7,5 @@ import de.rgra.vet.customer.ui.CustomerView;
 import javafx.scene.control.Tab;
 
 public interface CustomerViewTabService {
-
 	public List<Tab> createTabs(CustomerView view, Customer customer);
 }

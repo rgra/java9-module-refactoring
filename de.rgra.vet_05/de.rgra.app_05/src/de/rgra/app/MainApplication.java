@@ -43,7 +43,7 @@ public class MainApplication extends javafx.application.Application {
 		border.setCenter(createMainPane());
 		border.setLeft(createNavigation(configProvider));
 
-		Scene scene = new Scene(border, 1020, 800);
+		Scene scene = new Scene(border, 1020, 600);
 		scene.getStylesheets().add(configProvider.getStyleSheet().toURI().toString());
 		primaryStage.setScene(scene);
 

@@ -12,15 +12,15 @@ import javafx.beans.property.SimpleObjectProperty;
 
 public class Invoice {
 
-	private IntegerProperty idProperty = new SimpleIntegerProperty(this, "id"); //$NON-NLS-1$
+	private IntegerProperty idProperty = new SimpleIntegerProperty(this, "id");
 
-	private IntegerProperty customerIdProperty = new SimpleIntegerProperty(this, "customerId"); //$NON-NLS-1$
+	private IntegerProperty customerIdProperty = new SimpleIntegerProperty(this, "customerId");
 
-	private ObjectProperty<LocalDate> dateProperty = new SimpleObjectProperty<LocalDate>(this, "date"); //$NON-NLS-1$
+	private ObjectProperty<LocalDate> dateProperty = new SimpleObjectProperty<>(this, "date");
 
-	private ObjectProperty<BigDecimal> totalProperty = new SimpleObjectProperty<BigDecimal>(this, "total"); //$NON-NLS-1$
+	private ObjectProperty<BigDecimal> totalProperty = new SimpleObjectProperty<>(this, "total");
 
-	private BooleanProperty payedProperty = new SimpleBooleanProperty(this, "payed"); //$NON-NLS-1$
+	private BooleanProperty payedProperty = new SimpleBooleanProperty(this, "payed");
 
 	public IntegerProperty getIdProperty() {
 		return idProperty;
@@ -81,7 +81,5 @@ public class Invoice {
 	public void setPayed(boolean value) {
 		payedProperty.set(value);
 	}
-
-
 
 }

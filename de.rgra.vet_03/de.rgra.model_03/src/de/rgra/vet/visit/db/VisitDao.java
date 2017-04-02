@@ -14,7 +14,7 @@ import de.rgra.vet.visit.model.Visit;
 
 public class VisitDao {
 
-	private static final List<String> notes = Arrays.asList("Entwurmt", "Geimpft", "Bruch beim Röntgen festgestellt");
+	private static final List<String> notes = Arrays.asList("Entwurmt", "Geimpft", "Bruch beim Roentgen festgestellt");
 	private static final List<Visit> visits = createVisits();
 
 	public List<Visit> getVisitsByPetId(int petId) {
