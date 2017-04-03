@@ -4,7 +4,12 @@ import java.util.MissingResourceException;
 import java.util.ResourceBundle;
 
 public class Messages {
-	private static final String BUNDLE_NAME = "de.rgra.nl.messages"; //$NON-NLS-1$
+	
+	// this works in Java 9 Module
+	// private static final String BUNDLE_NAME = "de.rgra.nl.Messages";
+
+	// this doesn't work in Java 9 Module
+	private static final String BUNDLE_NAME = "de.rgra.nl.messages";
 
 	private static final ResourceBundle RESOURCE_BUNDLE = ResourceBundle.getBundle(BUNDLE_NAME);
 
@@ -18,8 +23,8 @@ public class Messages {
 			return '!' + key + '!';
 		}
 	}
-	
+
 	public static void main(String[] args) {
-		System.out.println(Messages.getString("I18n.message")); //$NON-NLS-1$
+		System.out.println("Java " + System.getProperty("java.version") + ": " + Messages.getString("I18n.message"));
 	}
 }
