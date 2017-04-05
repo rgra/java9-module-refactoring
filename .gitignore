@@ -1,0 +1,12 @@
+*.jar
+
+out/
+bin/
+modules/
+mods/
+mlib/
+carapp/
+vetapp/
+
+!lib/*.jar
+
