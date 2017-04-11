@@ -32,6 +32,7 @@ Refactoring Step 3: Resolving TODO in CustomerView with ServiceLoader
 ## de.rgra.vet_05
 
 Refactoring Step 4: 
+
 * Creating a general App Module
 * Creating a new Car Module, similar to the Pet Module
 * Resolving TODO in VisitDao
