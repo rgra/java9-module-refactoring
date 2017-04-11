@@ -2,3 +2,40 @@
 Code for Talk: Refactoring your code to Java 9 modules
 
 Slides and Abstract on my website: http://rgra.github.io
+
+Goal: Create two modular applications, one for a Vet and one for a Car Repair Shop.
+
+Use the provided scripts to compile and run the applications.
+Java 9 needs to be installed and the _JAVA9_ environment variable must point to the Java 9 /bin directory.
+
+## de.rgra.vet_01
+
+Initial code example with a simple JavaFX Application for a Vet.
+
+## de.rgra.vet_02
+
+Refactoring Step 1: Add Sub-Packages for technical layers
+
+## de.rgra.vet_03
+
+Refactoring Step 2: Creating Modules by splitting up the existing code
+
+* model
+* ui
+* pet
+* app
+
+## de.rgra.vet_04
+
+Refactoring Step 3: Resolving TODO in CustomerView with ServiceLoader
+
+## de.rgra.vet_05
+
+Refactoring Step 4: 
+* Creating a general App Module
+* Creating a new Car Module, similar to the Pet Module
+* Resolving TODO in VisitDao
+* Refactoring vet.app to use the general app 
+* Creating car.app which references on the Car Module instead of the Pet module
+
+This also adds a script for using the jlink to create platform specific standalone versions of the two applications.
