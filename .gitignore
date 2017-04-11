@@ -1,4 +1,9 @@
 *.jar
+*.graphml
+*.png
+*.svg
+*.dot
+**/sources.txt
 
 out/
 bin/
@@ -9,4 +14,8 @@ carapp/
 vetapp/
 
 !lib/*.jar
+
+.metadata/
+.recommenders/
+
 
