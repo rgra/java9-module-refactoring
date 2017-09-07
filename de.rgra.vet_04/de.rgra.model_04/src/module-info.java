@@ -1,6 +1,6 @@
 module de.rgra.model_04 {
 	requires javafx.base;
-	requires commons.lang;
+	requires org.apache.commons.lang;
 	
 	exports de.rgra.vet.customer.model;   
     exports de.rgra.vet.customer.db;    

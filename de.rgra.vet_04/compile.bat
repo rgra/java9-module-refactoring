@@ -1,21 +1,15 @@
 rd /s/q mods
 mkdir mods
 
-dir /s /B *.java | find "de.rgra.model_04" > sources.txt
-%JAVA9%\javac -p de.rgra.model_04/mods -d mods/de.rgra.model_04 @sources.txt
-xcopy /s/Y "de.rgra.model_04/resources" "mods/de.rgra.model_04"
+:: Copy commons.lang jar
 xcopy /s/Y "de.rgra.model_04/mods" "mods"
 
-dir /s /B *.java | find "de.rgra.ui_04" > sources.txt
-%JAVA9%\javac --module-path mods/ -d mods/de.rgra.ui_04 @sources.txt
-xcopy /s/Y "de.rgra.ui_04/resources" "mods/de.rgra.ui_04"
+::Find Sources and compile
+dir /s /B *.java | find "." > sources.txt
+"%JAVA9%"\javac -p mods --module-source-path "./*/src" -d classes  @sources.txt
 
-dir /s /B *.java | find "de.rgra.pet_04" > sources.txt
-%JAVA9%\javac --module-path mods/ -d mods/de.rgra.pet_04 @sources.txt
-xcopy /s/Y "de.rgra.pet_04/resources" "mods/de.rgra.pet_04"
+:: Copy resource files
+for %%f in (de.rgra.model_04,de.rgra.ui_04,de.rgra.pet_04,de.rgra.vet.app_04)  do xcopy /s/Y "%%f/resources" "classes/%%f"
 
-dir /s /B *.java | find "de.rgra.vet.app_04" > sources.txt
-%JAVA9%\javac --module-path mods/ -d mods/de.rgra.vet.app_04 @sources.txt
-xcopy /s/Y "de.rgra.vet.app_04/resources" "mods/de.rgra.vet.app_04"
-
-%JAVA9%\java -p mods -m de.rgra.vet.app_04/de.rgra.vet.VetServicesApplication
+:: Run the Application
+"%JAVA9%"\java -p mods;classes -m de.rgra.vet.app_04/de.rgra.vet.VetServicesApplication

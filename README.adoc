@@ -12,6 +12,8 @@ Java 9 needs to be installed and the _JAVA9_ environment variable must point to 
 
 Initial code example with a simple JavaFX Application for a Vet.
 
+It uses the commons.lang Jar for toString operations in Customer.
+
 ## de.rgra.vet_02
 
 Refactoring Step 1: Add Sub-Packages for technical layers
@@ -24,6 +26,8 @@ Refactoring Step 2: Creating Modules by splitting up the existing code
 * ui
 * pet
 * app
+
+Uses a modified commons-lang-2.6.jar with Automatic-Module-Name in MANIFEST.MF.
 
 ## de.rgra.vet_04
 

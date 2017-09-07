@@ -1,4 +1,4 @@
-module commons.lang {
+module org.apache.commons.lang {
     requires java.sql;
     exports org.apache.commons.lang;
     exports org.apache.commons.lang.builder;

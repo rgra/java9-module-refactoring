@@ -5,9 +5,9 @@
 *.dot
 **/sources.txt
 
+classes/
 out/
 bin/
-modules/
 mods/
 mlib/
 carapp/
