@@ -1,0 +1,7 @@
+plugins {
+    id 'java-library'
+    id 'org.gradle.java.experimental-jigsaw' version '0.1.1'  
+}
+
+
+javaModule.name = 'de.rgra.model_05'  

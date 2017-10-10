@@ -1,0 +1,25 @@
+subprojects {
+    afterEvaluate {
+        repositories {
+            jcenter()
+        }
+		
+
+    apply plugin: 'java'
+    tasks.withType(Jar) {
+        destinationDir = file("$rootDir/gradle")
+    }
+	
+	sourceSets {
+    main {
+        java {
+            srcDirs = ['src']
+        }
+        resources {
+            srcDirs = ['resources','resource']
+        }
+    }
+}
+
+    }
+}
