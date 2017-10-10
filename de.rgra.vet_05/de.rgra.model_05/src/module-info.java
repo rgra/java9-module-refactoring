@@ -1,7 +1,7 @@
 module de.rgra.model_05 {
 	requires transitive java.base;
 	requires transitive javafx.base;
-	requires org.apache.commons.lang;
+	requires org.apache.commons.lang3;
 	
 	exports de.rgra.vet.customer.model;   
     exports de.rgra.vet.customer.db;    

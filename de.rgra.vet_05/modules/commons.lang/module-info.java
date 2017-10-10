@@ -1,12 +1,18 @@
-module org.apache.commons.lang {
-    requires java.sql;
-    exports org.apache.commons.lang;
-    exports org.apache.commons.lang.builder;
-    exports org.apache.commons.lang.enums;
-    exports org.apache.commons.lang.exception;
-    exports org.apache.commons.lang.math;
-    exports org.apache.commons.lang.mutable;
-    exports org.apache.commons.lang.reflect;
-    exports org.apache.commons.lang.text;
-    exports org.apache.commons.lang.time;
+module org.apache.commons.lang3 {
+    requires transitive java.desktop;
+
+    exports org.apache.commons.lang3;
+    exports org.apache.commons.lang3.arch;
+    exports org.apache.commons.lang3.builder;
+    exports org.apache.commons.lang3.concurrent;
+    exports org.apache.commons.lang3.event;
+    exports org.apache.commons.lang3.exception;
+    exports org.apache.commons.lang3.math;
+    exports org.apache.commons.lang3.mutable;
+    exports org.apache.commons.lang3.reflect;
+    exports org.apache.commons.lang3.text;
+    exports org.apache.commons.lang3.text.translate;
+    exports org.apache.commons.lang3.time;
+    exports org.apache.commons.lang3.tuple;
+
 }
